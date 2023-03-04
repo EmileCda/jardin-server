@@ -1,0 +1,24 @@
+{
+  "name": "jardin-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:typescript": "npx tsc --watch",
+    "watch:app": "npx nodemon -r dotenv/config dist/index.js",
+    "start": "npx concurrently npm:watch:typescript npm:watch:app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.14.6",
+    "concurrently": "^7.6.0",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "mysql": "^2.18.1"
+  }
+}
