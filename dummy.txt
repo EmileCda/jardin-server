@@ -1,0 +1,11 @@
+dist
+doc
+dummy.txt
+env.dist
+node_modules
+package.json
+package-lock.json
+public
+README.md
+src
+tsconfig.json
