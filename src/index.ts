@@ -16,4 +16,4 @@ const connection = mysql.createConnection({
   });
 const database = "toto";
 
-  connection.query(`CREATE DATABASE IF NOT EXISTS \`${database}\`;`);
+connection.query(`CREATE DATABASE IF NOT EXISTS \`${database}\`;`);
